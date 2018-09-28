@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_below="@+id/list_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Noise Level"
+        app:layout_constraintBottom_toTopOf="@+id/crowd_ratingbar_expanded"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/noise_ratingbar_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/list_expanded"
+        android:layout_marginStart="120dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/crowd_ratingbar_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_below="@+id/list_expanded"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/noise_ratingbar_expanded" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/list_expanded"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Crowding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="67dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Lighting"
+        android:layout_below="@+id/list_expanded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <RatingBar
+        android:id="@+id/light_ratingbar_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="65dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:layout_below="@+id/list_expanded"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/crowd_ratingbar_expanded" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="97dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Visual Input"
+        android:layout_below="@+id/list_expanded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <RatingBar
+        android:id="@+id/visual_ratingbar_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="95dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_below="@+id/list_expanded"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/light_ratingbar_expanded" />
+
+    <TextView
+        android:id="@+id/smell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/list_expanded"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Smell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <RatingBar
+        android:id="@+id/smell_ratingbar_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="127dp"
+        android:scaleX="0.6"
+        android:layout_below="@+id/list_expanded"
+        android:scaleY="0.6"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintStart_toEndOf="@+id/smell"
+        app:layout_constraintTop_toTopOf="@+id/visual_ratingbar_expanded" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/smell"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Special Occasion:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smell" />
+
+    <TextView
+        android:id="@+id/occasion_text_expanded"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/smell"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Occasion"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+         />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Description:"
+        android:layout_below="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+    <ListView
+        android:id="@+id/list_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:transitionName="myExpandedList"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/description_expanded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="description"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

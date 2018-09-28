@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="Common questions"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: How to change my name, email or password?"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="A: After you login, on the top left corner there will be three bars. Click on the bar to open a navigation drawer. In the navigation drawer, select My profile. You should be able to edit your information on this page."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Q: I cannot see any reviews"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="A: If there is no reviews, it is either this place do not have any reviews yet or your session has expired. Please logout and login to continue. If this doesn't work, try to email us fom the contact us page at the top right corner"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="@color/black"
+                android:text="Q: A network error has occured"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="A: This probably occurs either when your internet is slow or if your device is offline. If both is notthe case, try to email us from the contact us page at the top right corner."
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="@color/black"
+                android:text="@string/log_out_question"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/log_out_answer"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/review_edit_question"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/review_edit_answer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textColor="@color/black"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none_answer"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                />
+        </LinearLayout>
+    </ScrollView>

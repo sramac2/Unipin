@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="identify_array">
+        <item>Adult with autism or sensory processing disorder</item>
+        <item>Parent</item>
+        <item>Child Caretaker</item>
+        <item>Other</item>
+    </string-array>
+</resources>

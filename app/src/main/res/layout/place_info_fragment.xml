@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo_place_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/spacedesktop" />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_below="@id/photo_place_info"
+        android:layout_above="@+id/write_place_info"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_place_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_overall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toStartOf="@+id/overall_place_info"
+                    android:text="@string/overall"
+                    android:textColor="@color/black" />
+
+                <RatingBar
+                    android:id="@+id/overall_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/crowd_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/crowd"
+                    android:textColor="@color/black" />
+
+                <RatingBar
+                    android:id="@+id/crowd_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crowd_text"
+                    android:layout_marginStart="3dp"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/noise_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/noise_place_info"
+                    android:layout_alignTop="@+id/crowd_text"
+                    android:text="@string/noise"
+                    android:textColor="@color/black" />
+
+                <RatingBar
+                    android:id="@+id/noise_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/crowd_place_info"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/light_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/crowd_text"
+                    android:layout_below="@+id/overall_place_info"
+                    android:text="@string/light"
+                    android:textColor="@android:color/black" />
+
+                <RatingBar
+                    android:id="@+id/light_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/crowd_place_info"
+                    android:layout_below="@+id/light_text"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/noise_text"
+                    android:layout_alignTop="@+id/light_text"
+                    android:text="@string/visual"
+                    android:textColor="@android:color/black" />
+
+                <RatingBar
+                    android:id="@+id/visual_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/noise_place_info"
+                    android:layout_alignTop="@+id/light_place_info"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/smell_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/crowd_text"
+                    android:layout_below="@+id/crowd_place_info"
+                    android:text="@string/smell"
+                    android:textColor="@color/black" />
+
+                <RatingBar
+                    android:id="@+id/smell_place_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/light_place_info"
+                    android:layout_below="@+id/smell_text"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address_place_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/phone_place_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/website_place_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/website"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/write_place_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/turquoise"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

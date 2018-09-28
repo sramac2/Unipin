@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewTransition">
+
+    <ImageView
+        android:id="@+id/place_image_transition"
+        android:layout_width="383dp"
+        android:layout_height="194dp"
+        android:transitionName="myList"
+        android:src="@drawable/spacedesktop" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167dp"
+        android:src="@drawable/ic_edit_white_24dp"
+        app:backgroundTint="@color/turquoise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/place_name_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_button"
+        android:layout_centerHorizontal="true"
+        android:text="Place"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/username_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name_transition"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="name"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/date_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_transition"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="date"
+        android:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/noise_ratingbar_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/date_transition"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_transition"
+        android:layout_toStartOf="@+id/noise_ratingbar_transition"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Noise Level"
+        android:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/crowd_ratingbar_transition"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:transformPivotY="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView49"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/noise_ratingbar_transition"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Crowding"
+        android:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/light_ratingbar_transition"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:transformPivotY="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView50"
+        android:layout_alignTop="@+id/light_ratingbar_transition"
+        android:layout_below="@+id/textView50"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Lighting"
+        android:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/visual_ratingbar_transition"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:transformPivotY="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView51"
+        android:layout_alignTop="@+id/visual_ratingbar_transition"
+        android:layout_below="@+id/crowd_ratingbar_transition"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Visual Input"
+        android:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/smell_ratingbar_transition"
+        android:layout_width="wrap_content"
+        android:transformPivotY="0dp"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView52"
+        android:layout_alignTop="@+id/smell_ratingbar_transition"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Smell"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/occasion_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visual_ratingbar_transition"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="Occasion"
+        android:textColor="@android:color/black" />
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/occasion_transition"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/description_transition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
